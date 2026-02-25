@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for contributing to `better-macos`.
+Thanks for contributing to `new-macos-dev-setup`.
 
 ## Project goals
 

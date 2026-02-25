@@ -7,8 +7,8 @@ Install the full approved workstation profile on a new Mac in one command flow.
 ## Standard install
 
 ```bash
-git clone https://github.com/rldyourmnd/better-macos.git
-cd better-macos
+git clone https://github.com/rldyourmnd/new-macos-dev-setup.git
+cd new-macos-dev-setup
 ./install-macos.sh --start-orbstack
 ```
 

@@ -13,8 +13,8 @@ Use this checklist to reproduce the same workstation profile on another Mac with
 ## Install
 
 ```bash
-git clone https://github.com/rldyourmnd/better-macos.git
-cd better-macos
+git clone https://github.com/rldyourmnd/new-macos-dev-setup.git
+cd new-macos-dev-setup
 ./install-macos.sh --start-orbstack
 ```
 

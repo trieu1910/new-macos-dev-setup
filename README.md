@@ -1,4 +1,4 @@
-# better-macOS
+# new-macos-dev-setup
 
 Professional bootstrap for macOS developer workstations.
 
@@ -8,7 +8,7 @@ Professional bootstrap for macOS developer workstations.
 
 ## Why this repository
 
-`better-macos` provides a reproducible workstation profile with:
+`new-macos-dev-setup` provides a reproducible workstation profile with:
 
 - domain-based installation modules
 - explicit version defaults for core runtimes
@@ -50,7 +50,7 @@ This repository installs the complete stack you approved for daily work:
 ## Quick start (new machine)
 
 ```bash
-cd /Users/rldyourmnd/projects/better-macos
+cd new-macos-dev-setup
 ./install-macos.sh
 ```
 
