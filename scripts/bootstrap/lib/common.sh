@@ -44,6 +44,14 @@ brew_formula_exists() {
   brew info --formula "$1" >/dev/null 2>&1
 }
 
+brew_tap_ensure() {
+  local tap="$1"
+  if brew tap | rg -x "$tap" >/dev/null 2>&1; then
+    return
+  fi
+  run brew tap "$tap"
+}
+
 brew_cask_exists() {
   brew info --cask "$1" >/dev/null 2>&1
 }

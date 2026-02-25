@@ -4,9 +4,15 @@ set -euo pipefail
 install_node_stack() {
   local node_formula="node"
   local formulas=(
-    bun
     node
   )
+
+  brew_tap_ensure "oven-sh/bun"
+  if brew_formula_exists "oven-sh/bun/bun"; then
+    brew_install_formulas "oven-sh/bun/bun"
+  elif brew_formula_exists "bun"; then
+    brew_install_formulas "bun"
+  fi
 
   if brew_formula_exists "node@24"; then
     node_formula="node@24"

@@ -63,6 +63,7 @@ The script prints installed tool versions at the end.
   - OpenCode via official curl installer
   - Gemini CLI via Homebrew
   - Codex via Homebrew (cask preferred)
+- Bun is installed via Homebrew tap `oven-sh/bun`.
 - Bootstrap keeps `node@24` active after Gemini CLI installation.
 - Shell environment is appended to `~/.zshrc` as a managed block (`BETTER_MACOS_ENV_VERSION=1`).
 - Windows and Linux scripts are present as placeholders and can be expanded next.
