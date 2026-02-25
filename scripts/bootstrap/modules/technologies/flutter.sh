@@ -3,11 +3,12 @@ set -euo pipefail
 
 install_flutter_stack() {
   local formulae=(
-    flutter
     cocoapods
-    android-commandlinetools
   )
   local casks=(
+    flutter
+    android-commandlinetools
+    android-studio
     google-chrome
   )
   local selected_formulae=()

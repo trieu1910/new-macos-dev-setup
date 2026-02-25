@@ -7,7 +7,7 @@ This repository installs the complete stack you approved for daily work:
 - Bun + Node.js LTS (with Bun-first default package flow)
 - Python 3.13 + uv
 - Rust (via official rustup)
-- Flutter + Android command line tools + Chrome
+- Flutter + Android command line tools + Android Studio + Chrome
 - Java OpenJDK 17
 - Modern C/C++ toolchain
 - AI CLI tools (Claude Code, OpenCode, Gemini CLI, OpenAI Codex)
@@ -51,7 +51,7 @@ The script prints installed tool versions at the end.
 - `js-ts.sh` installs Bun/Node and TS/JS quality tooling.
 - `python.sh` installs Python + uv + baseline quality toolchain.
 - `rust.sh` installs Rust.
-- `flutter.sh` installs Flutter + Android CLI + Chrome.
+- `flutter.sh` installs Flutter + Android CLI + Android Studio + Chrome.
 - `java.sh` installs OpenJDK 17.
 - `cpp.sh` installs modern C/C++ toolchain.
 - `ai-cli.sh` installs Claude Code, OpenCode, Gemini CLI, Codex.
