@@ -4,6 +4,9 @@
 # Env / cache artifacts local to bootstrap usage
 .env
 .cache/
+.venv/
+venv/
 
 # Temporary debug artifacts
 /tmp
+*.log
