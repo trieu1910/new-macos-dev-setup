@@ -4,6 +4,8 @@ IFS=$'\n\t'
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 START_ORBSTACK=0
+INSTALL_STATS=0
+CONFIGURE_STATS=0
 SKIP_HEALTH_CHECK=0
 DRY_RUN=0
 TARGET_OS=""
@@ -14,6 +16,8 @@ Usage: ./scripts/bootstrap/bootstrap.sh [options]
 
 Options:
   --start-orbstack            Start OrbStack and switch docker context to it.
+  --with-stats                Install Stats (menu bar system monitor) on macOS.
+  --configure-stats           Apply recommended Stats profile and autostart.
   --skip-health-check          Skip final health check.
   --dry-run                    Print commands without executing.
   --os [darwin|linux|windows]  Select OS module explicitly.
@@ -25,6 +29,13 @@ while [[ "$#" -gt 0 ]]; do
   case "$1" in
     --start-orbstack)
       START_ORBSTACK=1
+      ;;
+    --with-stats)
+      INSTALL_STATS=1
+      ;;
+    --configure-stats)
+      INSTALL_STATS=1
+      CONFIGURE_STATS=1
       ;;
     --skip-health-check)
       SKIP_HEALTH_CHECK=1
