@@ -69,5 +69,5 @@ The script prints installed tool versions at the end.
 
 - Codex App: [https://openai.com/codex/](https://openai.com/codex/)
 - Claude App: [https://www.claude.com/download](https://www.claude.com/download)
-- Antigravity: [https://antigravity-ide.com/](https://antigravity-ide.com/)
+- Antigravity: [https://antigravity.google/](https://antigravity.google/)
 - BrowserOS: [https://www.browseros.com/](https://www.browseros.com/)
