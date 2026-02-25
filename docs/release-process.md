@@ -13,7 +13,8 @@
    - `python3` default
    - `node` active version
 3. Ensure docs links are valid.
-4. Ensure repository is clean.
+4. Ensure release notes are prepared in `docs/releases/<version>.md`.
+5. Ensure repository is clean (except expected generated artifacts).
 
 ## Versioning
 
@@ -30,6 +31,7 @@
 ```bash
 git checkout main
 git pull
+./install-macos.sh --skip-health-check
 git tag -a vX.Y.Z -m "release: vX.Y.Z"
 git push origin vX.Y.Z
 ```

@@ -29,10 +29,24 @@ install_container_stack() {
     fi
   done
 
-  if has docker && has orbctl; then
-    run docker context use orbstack || true
-    if [[ "${START_ORBSTACK}" == "1" ]]; then
-      run orbctl start
+  if ! has docker; then
+    return
+  fi
+
+  if docker context ls >/dev/null 2>&1; then
+    if docker context ls | rg -q '^\*?\s*orbstack\s'; then
+      run docker context use orbstack
+    elif docker context ls | rg -q '^\*?\s*colima\s'; then
+      run docker context use colima
+    elif has orbctl; then
+      run docker context use orbstack
+    fi
+  fi
+
+  if [[ "${START_ORBSTACK}" == "1" ]] && has orbctl; then
+    run orbctl start
+    if docker context ls | rg -q '^\*?\s*orbstack\s'; then
+      run docker context use orbstack
     fi
   fi
 }

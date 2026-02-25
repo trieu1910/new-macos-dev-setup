@@ -8,6 +8,14 @@ The format is based on Keep a Changelog and this project follows Semantic Versio
 
 ### Added
 
+### Changed
+
+### Removed
+
+## [0.0.2] - 2026-02-25
+
+### Added
+
 - OSS community files:
   - `LICENSE`
   - `CONTRIBUTING.md`
@@ -22,16 +30,25 @@ The format is based on Keep a Changelog and this project follows Semantic Versio
   - shell lint
   - shell syntax checks
   - bootstrap smoke execution
+- Kubernetes platform domain module:
+  - `scripts/bootstrap/modules/technologies/kubernetes.sh`
 - GitHub Wiki with domain-separated tooling documentation.
+- Release notes artifact for 0.0.2 (`docs/releases/0.0.2.md`).
 
 ### Changed
 
 - Expanded docs set under `docs/`.
+- Added a versioned in-repo wiki (`docs/wiki/*`) covering System, Containers, JS/TS, Python, Rust, Flutter, Java, C/C++, AI CLI, Terminal UX, and Verification/Maintenance.
+- Added enterprise Kubernetes runtime block (kubectl, helm, kustomize, kind, minikube, kubectx, k9s) and wired it into the bootstrap flow with module-level docs.
 - Hardened reproducibility across domain modules.
+- Fixed Kubernetes module bootstrap bug (array variable typo) and aligned kubectl health checks to current client flag (`kubectl version --client=true`).
+- Container runtime context selection is now deterministic (OrbStack first, Colima fallback).
 - Strengthened Dependabot policy for GitHub Actions.
 - Repository renamed to `new-macos-dev-setup`.
 - Repository metadata optimized for discoverability (topics, description, homepage).
 - Rust module now installs cargo quality tooling (`cargo-audit`, `cargo-deny`, `cargo-edit`, `cargo-generate`, `cargo-outdated`, `cargo-watch`) for full parity with workstation baseline.
+
+### Removed
 
 ## [0.0.1] - 2026-02-25
 

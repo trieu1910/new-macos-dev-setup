@@ -22,6 +22,9 @@ cd new-macos-dev-setup
 
 ```bash
 zsh -ic 'python3 --version; python3.14 --version; node --version; bun --version; rustc --version; uv --version; flutter doctor -v | rg "No issues found|\\[✗\\]"; claude --version; opencode --version; gemini --version; codex --version'
+zsh -ic 'starship --version; atuin --version; delta --version; command -v cargo-add'
+zsh -ic 'kubectl version --client=true; helm version --short; kind version; minikube version; kustomize version; command -v kubectx; command -v kubens; k9s version'
+zsh -ic 'git config --global --get core.pager'
 ```
 
 ```bash
@@ -36,6 +39,7 @@ brew outdated --json=v2
 - Bun is installed from tap `oven-sh/bun`.
 - Flutter doctor reports no issues.
 - AI CLI versions are returned successfully.
+- Kubernetes tooling (`kubectl`, `helm`, `kind`, `minikube`, `kustomize`, `kubectx`, `kubens`, `k9s`) is present.
 - `brew outdated` returns empty `formulae` and `casks`.
 
 ## Re-run policy

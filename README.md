@@ -31,7 +31,9 @@ This repository installs the complete stack you approved for daily work:
 - Java OpenJDK 17
 - Modern C/C++ toolchain (LLVM, CMake, Ninja, clang-format, GoogleTest, pkgconf)
 - AI CLI tools (Claude Code, OpenCode, Gemini CLI, OpenAI Codex)
+- Terminal UX tools (Starship prompt, Atuin history + sync, git-delta pager)
 - Container runtime via OrbStack + Docker + Colima
+- Kubernetes stack (kubectl, helm, kustomize, kind, minikube, k9s, kubectx)
 - Optional Stats setup profile (menu bar monitoring) via flags
 - Developer utilities: GitHub CLI, Git, jq, yq, rg, fzf, lazygit, lazydocker, HTTPie, ncdu, wget
 
@@ -85,16 +87,20 @@ git pull
 
 - [Docs index](docs/README.md)
 - [Wiki Home](https://github.com/rldyourmnd/new-macos-dev-setup/wiki)
-- [Wiki: System Tools](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/System-Tools)
-- [Wiki: Containers](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Containers)
-- [Wiki: JavaScript and TypeScript](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/JavaScript-and-TypeScript)
-- [Wiki: Python](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Python)
-- [Wiki: Rust](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Rust)
-- [Wiki: Flutter and Mobile](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Flutter-and-Mobile)
-- [Wiki: Java](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Java)
-- [Wiki: C and C++](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/C-and-Cpp)
-- [Wiki: AI CLI](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/AI-CLI)
-- [Wiki: Verification and Maintenance](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Verification-and-Maintenance)
+- [Wiki Home (repository)](docs/wiki/README.md)
+- [Wiki: System Tools](docs/wiki/system-tools.md)
+- [Wiki: Containers](docs/wiki/containers.md)
+- [Wiki: JavaScript and TypeScript](docs/wiki/js-ts.md)
+- [Wiki: Python](docs/wiki/python.md)
+- [Wiki: Rust](docs/wiki/rust.md)
+- [Wiki: Flutter and Mobile](docs/wiki/flutter.md)
+- [Wiki: Java](docs/wiki/java.md)
+- [Wiki: C and C++](docs/wiki/cpp.md)
+- [Wiki: Kubernetes](docs/wiki/kubernetes.md)
+- [Wiki: AI CLI](docs/wiki/ai-cli.md)
+- [Wiki: Terminal UX](docs/wiki/terminal-ux.md)
+- [Wiki: Verification and Maintenance](docs/wiki/verification-and-maintenance.md)
+- [GitHub Wiki Home](https://github.com/rldyourmnd/new-macos-dev-setup/wiki)
 - [System requirements](docs/system-requirements.md)
 - [macOS quick start](docs/macos-quickstart.md)
 - [Architecture](docs/architecture.md)
@@ -117,6 +123,7 @@ The script prints installed tool versions at the end.
 - `system-tools.sh` installs cross-platform utility tooling for macOS.
 - `containers.sh` installs OrbStack, Docker, and Colima.
 - `stats.sh` installs Stats and applies an optional profile (`--configure-stats`).
+- `kubernetes.sh` installs kubectl + Helm/Kustomize stack, local k8s options (`kind`, `minikube`) and Kubernetes terminal tools.
 - `js-ts.sh` installs Bun/Node and TS/JS tooling (TypeScript, Vitest, Playwright, Husky, Biome, ESLint, Prettier).
 - `python.sh` installs Python with `3.13` as the default `python3`, plus additional `3.14`, then baseline quality tooling.
 - `rust.sh` installs Rust toolchain via rustup and cargo quality toolkit (`cargo-audit`, `cargo-deny`, `cargo-edit`, `cargo-generate`, `cargo-outdated`, `cargo-watch`).
@@ -124,6 +131,7 @@ The script prints installed tool versions at the end.
 - `java.sh` installs OpenJDK 17.
 - `cpp.sh` installs modern C/C++ toolchain.
 - `ai-cli.sh` installs Claude Code, OpenCode, Gemini CLI, Codex.
+- `terminal-experience.sh` adds Starship prompt, Atuin history, and git-delta pager defaults.
 
 ## Notes
 
@@ -134,6 +142,7 @@ The script prints installed tool versions at the end.
   - Codex via Homebrew (cask preferred)
 - Bun is installed via Homebrew tap `oven-sh/bun`.
 - Bootstrap keeps `node@24` active after Gemini CLI installation.
+- Shell UX block (Starship/Atuin integrations) is appended to `~/.zshrc` and kept idempotent.
 - Shell environment is appended to `~/.zshrc` as a managed block (`BETTER_MACOS_ENV_VERSION=1`).
 - Windows and Linux scripts are present as placeholders and can be expanded next.
 

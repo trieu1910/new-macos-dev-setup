@@ -24,16 +24,19 @@ This playbook tracks the repository growth setup for search and star conversion.
   - social proof badges
   - one-command quick start
   - docs + wiki links
-- Wiki provides domain-separated pages:
-  - system
-  - containers
-  - js/ts
-  - python
-  - rust
-  - flutter
-  - java
-  - c/c++
-  - ai cli
+- In-repo wiki provides domain-separated pages:
+  - [System Tools](wiki/system-tools.md)
+  - [Containers](wiki/containers.md)
+  - [Kubernetes](wiki/kubernetes.md)
+  - [JavaScript and TypeScript](wiki/js-ts.md)
+  - [Python](wiki/python.md)
+  - [Rust](wiki/rust.md)
+  - [Flutter and Mobile](wiki/flutter.md)
+  - [Java](wiki/java.md)
+  - [C and C++](wiki/cpp.md)
+  - [AI CLI](wiki/ai-cli.md)
+  - [Terminal UX](wiki/terminal-ux.md)
+  - [Verification and maintenance](wiki/verification-and-maintenance.md)
 
 ## OSS trust signals
 

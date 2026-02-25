@@ -17,6 +17,20 @@ This repository provides a reproducible macOS workstation bootstrap focused on s
 11. [Discoverability playbook](discoverability-playbook.md)
 12. [Troubleshooting](troubleshooting.md)
 13. [Portability checklist](portability-checklist.md)
+14. [Release notes: v0.0.2](releases/0.0.2.md)
+15. [Wiki home (in-repo)](wiki/README.md)
+15. [Wiki: System tools](wiki/system-tools.md)
+16. [Wiki: Containers](wiki/containers.md)
+17. [Wiki: Kubernetes](wiki/kubernetes.md)
+18. [Wiki: JS/TS](wiki/js-ts.md)
+19. [Wiki: Python](wiki/python.md)
+20. [Wiki: Rust](wiki/rust.md)
+21. [Wiki: Flutter](wiki/flutter.md)
+22. [Wiki: Java](wiki/java.md)
+23. [Wiki: C/C++](wiki/cpp.md)
+24. [Wiki: AI CLI](wiki/ai-cli.md)
+25. [Wiki: Terminal UX](wiki/terminal-ux.md)
+26. [Wiki: Verification and maintenance](wiki/verification-and-maintenance.md)
 
 ## Scope
 
@@ -26,6 +40,7 @@ This repository provides a reproducible macOS workstation bootstrap focused on s
 ## Wiki
 
 - GitHub Wiki home: <https://github.com/rldyourmnd/new-macos-dev-setup/wiki>
+- Local, versioned wiki: [wiki/README.md](wiki/README.md)
 
 ## Entrypoints
 

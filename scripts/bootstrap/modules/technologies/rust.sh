@@ -41,6 +41,13 @@ install_rust_cargo_extras() {
   installed="$(cargo install --list 2>/dev/null || true)"
 
   for crate in "${crates[@]}"; do
+    if [[ "$crate" == "cargo-edit" ]]; then
+      if command -v cargo-add >/dev/null 2>&1; then
+        log "cargo-edit toolchain already present"
+        continue
+      fi
+    fi
+
     if printf '%s\n' "$installed" | rg -q "^${crate} v"; then
       log "$crate already present"
       continue

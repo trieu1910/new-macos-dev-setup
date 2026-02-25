@@ -133,6 +133,17 @@ print_health_checks() {
     opencode
     gemini
     codex
+    starship
+    atuin
+    delta
+    kubectl
+    helm
+    kustomize
+    kind
+    k9s
+    kubectx
+    kubens
+    minikube
     java
   )
 

@@ -1,0 +1,58 @@
+format = '$username$hostname$directory$git_branch$git_status$kubernetes$nodejs$python$rust$golang$java$docker_context$package$time$cmd_duration$line_break$character'
+
+add_newline = true
+
+[username]
+show_always = true
+style_user = "bold green"
+style_root = "bold red"
+
+[hostname]
+ssh_only = false
+style = "bold dimmed green"
+
+[directory]
+truncation_length = 4
+truncate_to_repo = false
+style = "blue"
+
+[git_branch]
+symbol = "🌱 "
+style = "bold purple"
+
+[kubernetes]
+disabled = false
+style = "blue bold"
+symbol = "☸ "
+format = " on [$symbol$context ($namespace)]($style) "
+
+[nodejs]
+symbol = "⬢ "
+style = "green"
+
+[python]
+symbol = "🐍 "
+style = "yellow"
+
+[rust]
+symbol = "🦀 "
+style = "red"
+
+[golang]
+symbol = "🐹 "
+
+[java]
+symbol = "☕ "
+
+[docker_context]
+symbol = "🐳 "
+style = "blue"
+
+[time]
+format = "[$time]"
+time_format = "%H:%M"
+style = "dimmed cyan"
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"

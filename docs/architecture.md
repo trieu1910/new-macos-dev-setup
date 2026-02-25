@@ -24,12 +24,18 @@ The project uses a modular bootstrap architecture:
 - System and shell setup are isolated from language modules.
 - Each technology domain has its own script.
 - Modules are intended to remain idempotent and composable.
+- Domain details and recovery procedures are documented in `docs/wiki/*`.
 
 ## Version control points
 
 - JS runtime:
   - Bun from `oven-sh/bun`
   - Node active version pinned to `node@24`
+- Kubernetes runtime:
+  - `kubectl`, `helm`, `kustomize`, `kind`, `minikube`, `kubectx`, `k9s`
+- Container runtime control point:
+  - `container` module enforces deterministic context selection.
+  - Preferred context: `orbstack`, fallback: `colima`.
 - Python:
   - `python@3.13` linked as default `python3`
   - `python@3.14` installed as additional interpreter

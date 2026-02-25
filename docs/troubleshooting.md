@@ -65,6 +65,48 @@ Run:
 docker context use orbstack
 orbctl start
 docker context ls
+docker context use colima
+```
+
+If neither context exists, run a clean bootstrap for container modules:
+
+```bash
+./install-macos.sh --skip-health-check
+```
+
+## Kubernetes CLI/tooling missing or not found
+
+Run:
+
+```bash
+brew update
+brew install kubernetes-cli helm kustomize kind minikube kubectx k9s
+kubectl version --client=true
+helm version --short
+kind version
+minikube version
+```
+
+## kind/minikube cluster commands fail
+
+Run:
+
+```bash
+kind get clusters
+minikube status
+docker context ls
+```
+
+If Docker runtime is not available, start a container runtime first (OrbStack/Docker context or Colima) and re-run `install-macos.sh`.
+
+Deterministic recovery sequence:
+
+```bash
+docker context ls
+docker context use orbstack || docker context use colima
+if command -v orbctl >/dev/null 2>&1; then orbctl start; fi
+kind delete cluster --name test || true
+kind create cluster --name test
 ```
 
 ## Wrong Gemini package installed
