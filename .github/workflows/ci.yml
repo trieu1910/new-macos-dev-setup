@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  shell_lint:
+    name: Shell Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+
+      - name: Shellcheck bootstrap scripts
+        run: |
+          find scripts -type f -name "*.sh" -print0 | xargs -0 -n1 shellcheck -x
+          shellcheck -x install-macos.sh
+
+  shell_syntax:
+    name: Shell Syntax
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Bash syntax check
+        run: |
+          find scripts -type f -name "*.sh" -print0 | xargs -0 -n1 bash -n
+          bash -n install-macos.sh
+
+  bootstrap_smoke:
+    name: Bootstrap Smoke
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Entrypoint help
+        run: |
+          ./install-macos.sh --help
+          ./scripts/bootstrap/bootstrap.sh --help
+          ./scripts/bootstrap/setup-macos-dev-stack.sh --help
+
+      - name: Linux placeholder execution
+        run: ./scripts/bootstrap/bootstrap.sh --os linux --skip-health-check
