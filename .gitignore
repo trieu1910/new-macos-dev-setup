@@ -1,0 +1,9 @@
+# macOS and shell noise
+.DS_Store
+
+# Env / cache artifacts local to bootstrap usage
+.env
+.cache/
+
+# Temporary debug artifacts
+/tmp
