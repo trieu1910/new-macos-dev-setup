@@ -32,6 +32,25 @@ The format is based on Keep a Changelog and this project follows Semantic Versio
 - Repository renamed to `new-macos-dev-setup`.
 - Repository metadata optimized for discoverability (topics, description, homepage).
 
+## [0.0.1] - 2026-02-25
+
+### Added
+
+- Optional Stats module for macOS:
+  - `--with-stats` to install Stats.
+  - `--configure-stats` to apply a recommended monitoring profile and login item.
+- New module:
+  - `scripts/bootstrap/modules/system/stats.sh`
+
+### Changed
+
+- Updated bootstrap CLI help with Stats flags.
+- Wired Stats module into `darwin` orchestrator.
+- Updated docs:
+  - `README.md`
+  - `docs/macos-quickstart.md`
+  - `docs/module-reference.md`
+
 ## [1.0.0] - 2026-02-25
 
 ### Added
