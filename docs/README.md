@@ -12,8 +12,9 @@ This repository provides a reproducible macOS workstation bootstrap focused on s
 6. [Maintenance guide](maintenance.md)
 7. [Release process](release-process.md)
 8. [Governance](governance.md)
-9. [Troubleshooting](troubleshooting.md)
-10. [Portability checklist](portability-checklist.md)
+9. [Community health](community-health.md)
+10. [Troubleshooting](troubleshooting.md)
+11. [Portability checklist](portability-checklist.md)
 
 ## Scope
 

@@ -80,6 +80,7 @@ git pull
 - [Maintenance guide](docs/maintenance.md)
 - [Release process](docs/release-process.md)
 - [Governance](docs/governance.md)
+- [Community health](docs/community-health.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [Portability checklist](docs/portability-checklist.md)
 
