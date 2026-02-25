@@ -64,3 +64,10 @@ The script prints installed tool versions at the end.
   - Gemini CLI via Homebrew
   - Codex via Homebrew (cask preferred)
 - Windows and Linux scripts are present as placeholders and can be expanded next.
+
+## Official installation pages
+
+- Codex App: [https://openai.com/codex/](https://openai.com/codex/)
+- Claude App: [https://www.claude.com/download](https://www.claude.com/download)
+- Antigravity: [https://antigravity-ide.com/](https://antigravity-ide.com/)
+- BrowserOS: [https://www.browseros.com/](https://www.browseros.com/)
