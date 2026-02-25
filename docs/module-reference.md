@@ -26,7 +26,7 @@
 | Java | `java.sh` | `openjdk@17` |
 | JS/TS | `js-ts.sh` | Bun via `oven-sh/bun`, Node + `node@24`, TypeScript, Vitest, Playwright, Husky, Biome, ESLint, Prettier |
 | Python | `python.sh` | `python@3.13` (default), `python@3.14` (additional), uv, ruff, mypy, pytest, pipx |
-| Rust | `rust.sh` | rustup, stable toolchain, clippy, rustfmt |
+| Rust | `rust.sh` | rustup, stable toolchain, clippy, rustfmt, cargo-audit, cargo-deny, cargo-edit, cargo-generate, cargo-outdated, cargo-watch |
 | Flutter/Mobile | `flutter.sh` | Flutter (cask), Android command line tools (cask), Android Studio (cask), CocoaPods, Chrome |
 | C/C++ | `cpp.sh` | clang-format, llvm, cmake, ninja, ccache, conan, vcpkg, cppcheck, googletest, pkgconf |
 | AI CLI | `ai-cli.sh` | Claude Code via official curl, OpenCode via official curl, Gemini CLI via brew, Codex via brew cask |

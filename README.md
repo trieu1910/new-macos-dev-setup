@@ -26,7 +26,7 @@ This repository installs the complete stack you approved for daily work:
 
 - Bun + Node.js LTS (with Bun-first default package flow, Node 24 kept active)
 - Python 3.13 as default + Python 3.14 as additional + uv
-- Rust (via official rustup)
+- Rust (rustup + clippy/rustfmt + cargo quality toolkit)
 - Flutter + Android command line tools + Android Studio + Chrome
 - Java OpenJDK 17
 - Modern C/C++ toolchain (LLVM, CMake, Ninja, clang-format, GoogleTest, pkgconf)
@@ -119,7 +119,7 @@ The script prints installed tool versions at the end.
 - `stats.sh` installs Stats and applies an optional profile (`--configure-stats`).
 - `js-ts.sh` installs Bun/Node and TS/JS tooling (TypeScript, Vitest, Playwright, Husky, Biome, ESLint, Prettier).
 - `python.sh` installs Python with `3.13` as the default `python3`, plus additional `3.14`, then baseline quality tooling.
-- `rust.sh` installs Rust toolchain via rustup.
+- `rust.sh` installs Rust toolchain via rustup and cargo quality toolkit (`cargo-audit`, `cargo-deny`, `cargo-edit`, `cargo-generate`, `cargo-outdated`, `cargo-watch`).
 - `flutter.sh` installs Flutter + Android CLI + Android Studio + Chrome.
 - `java.sh` installs OpenJDK 17.
 - `cpp.sh` installs modern C/C++ toolchain.
