@@ -28,7 +28,7 @@ This repository installs the complete stack you approved for daily work:
 ## Quick start
 
 ```bash
-cd /Users/rldyourmnd/projects/better-macOS
+cd /Users/rldyourmnd/projects/better-macos
 ./install-macos.sh
 ```
 
@@ -39,6 +39,17 @@ cd /Users/rldyourmnd/projects/better-macOS
 ```bash
 ./install-macos.sh --dry-run
 ```
+
+## Documentation
+
+- [Docs index](docs/README.md)
+- [System requirements](docs/system-requirements.md)
+- [macOS quick start](docs/macos-quickstart.md)
+- [Module reference](docs/module-reference.md)
+- [Verification guide](docs/verification.md)
+- [Maintenance guide](docs/maintenance.md)
+- [Troubleshooting](docs/troubleshooting.md)
+- [Portability checklist](docs/portability-checklist.md)
 
 ## Health check
 
