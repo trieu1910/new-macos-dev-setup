@@ -21,6 +21,10 @@ This repository provides a reproducible macOS workstation bootstrap focused on s
 - Fully supported now: macOS (`darwin`) flow.
 - Placeholders: Linux and Windows modules exist and can be expanded later.
 
+## Wiki
+
+- GitHub Wiki home: <https://github.com/rldyourmnd/new-macos-dev-setup/wiki>
+
 ## Entrypoints
 
 - Main installer: `./install-macos.sh`

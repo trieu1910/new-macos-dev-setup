@@ -79,6 +79,17 @@ git pull
 ## Documentation
 
 - [Docs index](docs/README.md)
+- [Wiki Home](https://github.com/rldyourmnd/new-macos-dev-setup/wiki)
+- [Wiki: System Tools](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/System-Tools)
+- [Wiki: Containers](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Containers)
+- [Wiki: JavaScript and TypeScript](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/JavaScript-and-TypeScript)
+- [Wiki: Python](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Python)
+- [Wiki: Rust](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Rust)
+- [Wiki: Flutter and Mobile](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Flutter-and-Mobile)
+- [Wiki: Java](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Java)
+- [Wiki: C and C++](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/C-and-Cpp)
+- [Wiki: AI CLI](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/AI-CLI)
+- [Wiki: Verification and Maintenance](https://github.com/rldyourmnd/new-macos-dev-setup/wiki/Verification-and-Maintenance)
 - [System requirements](docs/system-requirements.md)
 - [macOS quick start](docs/macos-quickstart.md)
 - [Architecture](docs/architecture.md)
