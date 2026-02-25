@@ -68,10 +68,21 @@ brew_install_casks() {
   done
 }
 
+brew_cask_installed() {
+  brew list --cask "$1" >/dev/null 2>&1
+}
+
 brew_uninstall_formula() {
   local package=$1
   if brew list --formula "$package" >/dev/null 2>&1; then
     run brew uninstall --ignore-dependencies --formula "$package"
+  fi
+}
+
+brew_uninstall_cask() {
+  local package=$1
+  if brew_cask_installed "$package"; then
+    run brew uninstall --cask "$package"
   fi
 }
 

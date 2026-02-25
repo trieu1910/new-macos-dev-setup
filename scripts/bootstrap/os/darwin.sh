@@ -4,6 +4,7 @@ set -euo pipefail
 bootstrap_darwin() {
   ensure_homebrew
   source "${SCRIPT_DIR}/modules/system/system-tools.sh"
+  source "${SCRIPT_DIR}/modules/system/shell-env.sh"
   source "${SCRIPT_DIR}/modules/system/containers.sh"
   source "${SCRIPT_DIR}/modules/technologies/js-ts.sh"
   source "${SCRIPT_DIR}/modules/technologies/python.sh"
@@ -22,4 +23,5 @@ bootstrap_darwin() {
   install_flutter_stack
   install_cpp_stack
   install_ai_cli_stack
+  configure_shell_env
 }
