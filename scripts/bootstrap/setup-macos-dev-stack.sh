@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-readonly REPO_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+readonly REPO_DIR="20 20 12 61 79 80 81 33 98 100 204 250 395 398 399 400 701cd "/../.." && pwd)"
 readonly BREWFILE="${REPO_DIR}/Brewfile"
 readonly ZSHRC="${HOME}/.zshrc"
 
