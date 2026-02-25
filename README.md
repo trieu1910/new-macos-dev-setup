@@ -32,6 +32,7 @@ This repository installs the complete stack you approved for daily work:
 - Modern C/C++ toolchain (LLVM, CMake, Ninja, clang-format, GoogleTest, pkgconf)
 - AI CLI tools (Claude Code, OpenCode, Gemini CLI, OpenAI Codex)
 - Container runtime via OrbStack + Docker + Colima
+- Optional Stats setup profile (menu bar monitoring) via flags
 - Developer utilities: GitHub CLI, Git, jq, yq, rg, fzf, lazygit, lazydocker, HTTPie, ncdu, wget
 
 ## Community and policies
@@ -63,6 +64,10 @@ cd new-macos-dev-setup
 
 ```bash
 ./install-macos.sh --start-orbstack
+```
+
+```bash
+./install-macos.sh --with-stats --configure-stats
 ```
 
 ```bash
@@ -111,6 +116,7 @@ The script prints installed tool versions at the end.
 
 - `system-tools.sh` installs cross-platform utility tooling for macOS.
 - `containers.sh` installs OrbStack, Docker, and Colima.
+- `stats.sh` installs Stats and applies an optional profile (`--configure-stats`).
 - `js-ts.sh` installs Bun/Node and TS/JS tooling (TypeScript, Vitest, Playwright, Husky, Biome, ESLint, Prettier).
 - `python.sh` installs Python with `3.13` as the default `python3`, plus additional `3.14`, then baseline quality tooling.
 - `rust.sh` installs Rust toolchain via rustup.
