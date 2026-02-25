@@ -1,0 +1,35 @@
+name: Feature request
+description: Propose an improvement to bootstrap, docs, or module architecture
+title: "[feature] "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      description: system, containers, js-ts, python, rust, flutter, java, cpp, ai-cli, docs
+      placeholder: "python"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe what should change
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and tradeoffs
+      description: Version changes, compatibility impact, or migration notes
+    validations:
+      required: true
