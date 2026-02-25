@@ -2,6 +2,19 @@
 
 Professional bootstrap for macOS developer workstations.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![OS](https://img.shields.io/badge/OS-macOS%20(Primary)-000000)](docs/system-requirements.md)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-Modular-2ea44f)](docs/architecture.md)
+
+## Why this repository
+
+`better-macos` provides a reproducible workstation profile with:
+
+- domain-based installation modules
+- explicit version defaults for core runtimes
+- one-command bootstrap for clean or existing macOS systems
+- strong documentation and OSS governance
+
 This repository installs the complete stack you approved for daily work:
 
 - Bun + Node.js LTS (with Bun-first default package flow, Node 24 kept active)
@@ -14,6 +27,15 @@ This repository installs the complete stack you approved for daily work:
 - Container runtime via OrbStack + Docker + Colima
 - Developer utilities: GitHub CLI, Git, jq, yq, rg, fzf, lazygit, lazydocker, HTTPie, ncdu, wget
 
+## Community and policies
+
+- [Contributing guide](CONTRIBUTING.md)
+- [Code of conduct](CODE_OF_CONDUCT.md)
+- [Security policy](SECURITY.md)
+- [Support policy](SUPPORT.md)
+- [Changelog](CHANGELOG.md)
+- [License](LICENSE)
+
 ## Repository structure
 
 - `scripts/bootstrap/bootstrap.sh` — unified entrypoint for all platforms.
@@ -25,7 +47,7 @@ This repository installs the complete stack you approved for daily work:
 - `scripts/bootstrap/lib/common.sh` — shared bootstrap helpers.
 - `scripts/bootstrap/setup-macos-dev-stack.sh` — backward compatible wrapper.
 
-## Quick start
+## Quick start (new machine)
 
 ```bash
 cd /Users/rldyourmnd/projects/better-macos
@@ -38,6 +60,13 @@ cd /Users/rldyourmnd/projects/better-macos
 
 ```bash
 ./install-macos.sh --dry-run
+```
+
+## Re-run and update
+
+```bash
+git pull
+./install-macos.sh --start-orbstack
 ```
 
 ## Documentation
