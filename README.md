@@ -48,7 +48,7 @@ The script prints installed tool versions at the end.
 
 - `system-tools.sh` installs cross-platform utility tooling for macOS.
 - `containers.sh` installs OrbStack and Docker.
-- `js-ts.sh` installs Bun/Node and TS/JS quality tooling.
+- `js-ts.sh` installs Bun/Node and TS/JS tooling (TypeScript, Vitest, Playwright, Husky, Biome, ESLint, Prettier).
 - `python.sh` installs Python + uv + baseline quality toolchain.
 - `rust.sh` installs Rust.
 - `flutter.sh` installs Flutter + Android CLI + Android Studio + Chrome.

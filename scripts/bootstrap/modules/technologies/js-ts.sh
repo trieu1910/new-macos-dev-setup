@@ -21,7 +21,11 @@ install_node_stack() {
   if has bun; then
     run bun install -g typescript
     run bun install -g tsx
+    run bun install -g ts-node
     run bun install -g vitest
+    run bun install -g playwright
+    run bun install -g @playwright/test
+    run bun install -g husky
     run bun install -g @biomejs/biome
     run bun install -g prettier
     run bun install -g eslint
