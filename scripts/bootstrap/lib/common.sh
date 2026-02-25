@@ -104,6 +104,12 @@ print_health_checks() {
     uv
     rustc
     cargo
+    cargo-audit
+    cargo-deny
+    cargo-add
+    cargo-generate
+    cargo-outdated
+    cargo-watch
     clang
     clang++
     clangd
