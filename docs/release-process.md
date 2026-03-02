@@ -23,8 +23,8 @@
 
 ## Active release target
 
-- `v0.0.2`: complete macOS setup baseline with full program coverage and configuration defaults.
-- Planning source: `docs/roadmap-v0.0.2.md`.
+- `v0.0.3`: OSS hardening release (CI security, dependency review, contributor quality gates, documentation portability).
+- Planning source: `docs/releases/0.0.3.md`.
 
 ## Cut release
 

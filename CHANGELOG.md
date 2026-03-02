@@ -12,6 +12,28 @@ The format is based on Keep a Changelog and this project follows Semantic Versio
 
 ### Removed
 
+## [0.0.3] - 2026-03-02
+
+### Added
+
+- Dependency review workflow for pull requests (`.github/workflows/dependency-review.yml`) with `moderate` vulnerability threshold.
+- Repository `Makefile` quality targets (`check`, `lint-shell`, `syntax-shell`, `lint-workflows`, `lint-docs`, `smoke`).
+- Development quality guide (`docs/development.md`).
+- Markdown lint baseline config (`.markdownlint.yml`, `.markdownlintignore`).
+
+### Changed
+
+- CI workflow hardened:
+  - `actions/checkout` pinned to SHA for `v6.0.2`.
+  - Added workflow lint (`actionlint`) and docs lint (`markdownlint`).
+- Contribution flow now documents mandatory local quality gate (`make check`).
+- README and docs index now include contributor quality checks and development guide links.
+- Documentation commands now use portable paths (`~/projects/new-macos-dev-setup`) instead of user-specific absolute paths.
+- Issue form placeholders updated to realistic macOS version examples.
+- `.gitignore` now excludes local Codex/agent metadata directories (`.serena/`, `.claude/`, `.codex/`).
+
+### Removed
+
 ## [0.0.2] - 2026-02-25
 
 ### Added
