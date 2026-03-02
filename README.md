@@ -83,9 +83,18 @@ git pull
 ./install-macos.sh --start-orbstack
 ```
 
+## Contributor quality checks
+
+```bash
+make check
+```
+
+Run this before opening a pull request. It executes shell lint, shell syntax checks, workflow lint, docs lint, and smoke checks.
+
 ## Documentation
 
 - [Docs index](docs/README.md)
+- [Development guide](docs/development.md)
 - [Wiki Home](https://github.com/rldyourmnd/new-macos-dev-setup/wiki)
 - [Wiki Home (repository)](docs/wiki/README.md)
 - [Wiki: System Tools](docs/wiki/system-tools.md)
