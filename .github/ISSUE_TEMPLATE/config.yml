@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Security report
-    url: mailto:danilsilantyevwork@gmail.com
-    about: Report security vulnerabilities privately
-  - name: Documentation index
-    url: https://github.com/rldyourmnd/new-macos-dev-setup/blob/main/docs/README.md
-    about: Start here for setup and troubleshooting docs
